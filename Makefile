@@ -1,6 +1,9 @@
 gorun:
 	go run ./cmd/main.go
 
+herokulog:
+	heroku logs --tail --app community-servicee
+
 run:
 	@GO111MODULE=off go get -u github.com/husol/fresh
 	fresh -c fresh.conf

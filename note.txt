@@ -1,8 +1,0 @@
-Cac service:         Local port       Online
-1.auth-service       3001              https://authenication-service.herokuapp.com/
-2.user-service       3002              https://users-servicee.herokuapp.com/
-3.movie-service      3000              https://movie-servicee.herokuapp.com/
-4.community-service  3003 
-
-
-Main service: movie 

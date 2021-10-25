@@ -8,9 +8,9 @@ import (
 	serviceHttp "github.com/phamtrung99/community-service/delivery/http"
 	"github.com/phamtrung99/community-service/repository"
 	"github.com/phamtrung99/community-service/usecase"
-	"github.com/phamtrung99/movie-service/client/mysql"
-	"github.com/phamtrung99/movie-service/config"
-	"github.com/phamtrung99/movie-service/migration"
+	"github.com/phamtrung99/community-service/client/mysql"
+	"github.com/phamtrung99/community-service/config"
+	"github.com/phamtrung99/community-service/migration"
 )
 
 func main() {
@@ -40,7 +40,7 @@ func executeServer(repo *repository.Repository, ucase *usecase.UseCase) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	
+
 	errs := make(chan error)
 
 	// http
@@ -49,7 +49,7 @@ func executeServer(repo *repository.Repository, ucase *usecase.UseCase) {
 	go func() {
 		h.Listener = l
 
-		log.Printf("Service community is running on http://localhost:%s", cfg.Port)
+		log.Printf("Server is running on http://localhost:%s", cfg.Port)
 		errs <- h.Start("")
 	}()
 
