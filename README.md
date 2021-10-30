@@ -1,7 +1,7 @@
 #  Community Service
 :star: Star me on GitHub — it motivates me a lot!
 
-[Auth service]() is an Restful-APIs, build by Golang language.
+[Community service]() is an Restful-APIs, build by Golang language.
 
 
 ## Prerequisites
